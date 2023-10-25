@@ -4,21 +4,21 @@ import "./cursor.css";
 import { gsap } from "gsap";
 
 const Cursor = () => {
-  const csr = useRef(null);
+  const csr = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
       const { clientX, clientY } = e;
-      if (e.target.tagName === "A") {
+      if (e.target && (e.target as HTMLElement).tagName === "A") {
         gsap.to(csr.current, {
           scale: 4,
         });
-        csr.current.classList.add("active");
+        csr.current?.classList.add("active");
       } else {
         gsap.to(csr.current, {
           scale: 1,
         });
-        csr.current.classList.remove("active");
+        csr.current?.classList.remove("active");
       }
       gsap.to(csr.current, {
         x: clientX,

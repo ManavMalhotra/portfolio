@@ -1,7 +1,7 @@
 import React from "react";
 
-const Container = ({ children, className }: { children: React.ReactNode }) => {
-  return <section className={`mt-6 ${className}`}>{children}</section>;
+const Container = ({ children }: { children: React.ReactNode }) => {
+  return <section className={`mt-6`}>{children}</section>;
 };
 
 export default Container;

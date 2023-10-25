@@ -25,7 +25,7 @@ export default function Home() {
       <Cursor />
 
       <main
-        className="flex flex-col min-h-screen px-24 py-28"
+        className="flex flex-col min-h-screen px-24 pb-28"
         data-scroll-container
         ref={containerRef}
       >
