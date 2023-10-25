@@ -1,0 +1,31 @@
+.cursor {
+  /* pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.3rem;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  mix-blend-mode: difference;
+  z-index: 9999; */
+
+  border: 1px solid black;
+  filter: blur(0.7px);
+  border-radius: 50%;
+  box-shadow: 0 0 20px black;
+  pointer-events: none;
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  height: 2rem;
+  width: 2rem;
+  transition: transform 0.1s, background 0.1s;
+}
+
+.cursor.active {
+  /* transform: scale(1.1); */
+  background-color: #000000;
+  mix-blend-mode: difference;
+}
