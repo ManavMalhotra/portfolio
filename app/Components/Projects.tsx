@@ -23,8 +23,11 @@ const Projects = () => {
               <li>{project.point4}</li>
               <li>
                 <strong>Tech stack: </strong>
-                {project.technologies.map((tech) => (
-                  <span className="px-2 py-1 bg-gray-200 rounded-md text-gray-700 text-sm mr-2">
+                {project.technologies.map((tech, i) => (
+                  <span
+                    className="px-2 py-1 bg-gray-200 rounded-md text-gray-700 text-sm mr-2"
+                    key={i}
+                  >
                     {tech}
                   </span>
                 ))}
