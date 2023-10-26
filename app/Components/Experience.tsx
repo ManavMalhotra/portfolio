@@ -1,22 +1,39 @@
+import { useEffect } from "react";
+import experiences from "../data/experiences.json";
+import exp from "constants";
+
 const Experience = () => {
+  useEffect(() => {
+    console.log(experiences);
+  }, []);
   return (
-    <div className="py-20" id="experience" >
+    <div className="py-20" id="experience">
       <h2 className="font-medium text-8xl">Experience</h2>
 
-      <section className="py-6">
-        <label>Aug 2023 - Oct 2023</label>
-        <h3 className="text-xl font-medium">
-          Fullstack Developer Intern - @Adcratic
-        </h3>
-      </section>
-      <hr />
-      <section className="py-6">
-        <label>Jun 2023 - Jul 2023</label>
-        <h3 className="text-xl font-medium">
-          Artificial Intelligence Intern - @Edunet Foundation
-        </h3>
-      </section>
-      <hr />
+      {experiences.map((exp) => (
+        <>
+          <section className="py-6">
+            <label>{`${exp.startDate} - ${exp.endDate}`}</label>
+            <h3 className="text-xl font-medium">
+              {`${exp.name} - @${exp.company}`}
+            </h3>
+            <li className="list-disc pl-6">{exp.point1}</li>
+            <li className="list-disc pl-6">{exp.point2}</li>
+            <li className="list-disc pl-6">{exp.point3}</li>
+            {exp.point4 ? (
+              <li className="list-disc pl-6">{exp.point4}</li>
+            ) : null}
+            <div>
+              {exp.technologies.map((tech) => (
+                <span className="px-2 py-1 bg-gray-200 rounded-md text-gray-700 text-sm mr-2">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </section>
+          <hr />
+        </>
+      ))}
     </div>
   );
 };

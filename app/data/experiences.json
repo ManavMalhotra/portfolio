@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Full Stack Developer Intern",
+    "company": "Adcratic Studios ",
+    "location": "Remote",
+    "startDate": "Aug 2023",
+    "endDate": "Oct 2023",
+    "point1": "Designed and developed responsive websites by seamlessly translating Figma designs into live web applications using Next.js",
+    "point2": "Collaborated effectively with the design team to ensure pixel-perfect implementations and a cohesive user experience.",
+    "point3": "Spearheaded the development of a company product, ”Six Thinking Hats,” a React Native application designed to streamline decision-making processes for startups.",
+    "point4": "Implemented a new feature for Google Maps that allows users to see the most popular times for a place",
+    "technologies": [
+      "Next.js",
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "Figma",
+      "Socket.io"
+    ]
+  },
+  {
+    "name": "Artificial Intelligence Intern",
+    "company": "Edunet Foundation",
+    "location": "Remote",
+    "startDate": "Jun 2023",
+    "endDate": "Jul 2023",
+    "point1": "Acquired valuable hands-on experience in machine learning and artificial intelligence by actively participating in the IBM SkillsBuild platform.",
+    "point2": "Demonstrated technical proficiency by designing and implementing a Mental Fitness Tracker using Python.",
+    "point3": "This innovative tool accurately predicts user mental fitness levels, leveraging various factors for assessment.",
+    "technologies": ["Python", "Machine Learning"]
+  }
+]

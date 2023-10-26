@@ -16,14 +16,15 @@ export default function Home() {
 
   return (
     <LocomotiveScrollProvider
-      options={{
-        smooth: true,
-      }}
-      containerRef={containerRef}
+    options={{
+      smooth: true,
+    }}
+    containerRef={containerRef}
     >
       <Navbar />
-      <Cursor />
 
+    <Cursor />
+    
       <main
         className="flex flex-col min-h-screen px-24 pb-28"
         data-scroll-container

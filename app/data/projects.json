@@ -1,0 +1,46 @@
+[
+  {
+    "name": "NoteMesh",
+    "url": "https://note-mesh-drhi.vercel.app/",
+    "code": "https://github.com/ManavMalhotra/NoteMesh",
+    "point1": "Implemented secure user authentication ensuring data privacy.",
+    "point2": "Designed and implemented a RESTful API for the application.",
+    "point3": "Implemented a database schema for the application.",
+    "point4": "Implemented a web interface for the application.",
+    "technologies": [
+      "React.js",
+      "Context API",
+      "TailwindCSS",
+      "Node.js",
+      "MongoDB",
+      "Express.js"
+    ]
+  },
+  {
+    "name": "NoteMesh Extension",
+    "url": "http://www.notemesh.com/",
+    "code": "notemesh",
+    "point1": "React.js, Chrome Extensions Platform, Firebase",
+    "point2": "Access the extension as a panel for a convenient note-taking experience.",
+    "point3": "Achieve real-time note creation, editing, and deletion.",
+    "point4": "Enabled multi-user collaboration on the same note.",
+    "technologies": ["React.js", "Chrome Extensions Platform", "Firebase"]
+  },
+  {
+    "name": "DigiDocs",
+    "url": "https://googledocs-clone-tau.vercel.app",
+    "code": "https://github.com/ManavMalhotra/googledocs-clone",
+    "point1": "Real-time collaboration on documents for enhanced teamwork.",
+    "point2": "Enabled real-time collaboration on documents for enhanced teamwork.",
+    "point3": "Created unique URLs for easy sharing and collaboration.",
+    "point4": "Designed a user-friendly interface for a seamless user experience.",
+    "technologies": [
+      "React.js",
+      "Socket.io",
+      "TailwindCSS",
+      "Node.js",
+      "MongoDB",
+      "Express.js"
+    ]
+  }
+]
