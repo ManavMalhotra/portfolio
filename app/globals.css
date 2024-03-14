@@ -36,7 +36,7 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.project-card:hover {
+/* .project-card:hover {
   transition: all 0.2s ease-in-out;
   background-color: rgb(var(--card));
   color: rgb(var(--foreground-rgb));
@@ -52,4 +52,4 @@ a:hover {
 
 .project-card:hover.cursor{
   z-index: 9999999;
-}
+} */

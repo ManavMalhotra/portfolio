@@ -18,7 +18,7 @@ export default function Home() {
       <Cursor />
 
       <main
-        className="flex flex-col min-h-screen px-24 pb-28"
+        className="flex flex-col min-h-screen md:px-24 pb-28 overflow-hidden px-8"
         data-scroll-container
         ref={containerRef}
       >
@@ -27,6 +27,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <Socials />
+      
       </main>
     </>
   );

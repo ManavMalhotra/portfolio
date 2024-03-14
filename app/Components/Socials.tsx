@@ -2,8 +2,8 @@ import socials from "../data/socials.json";
 
 const Socials = () => {
   return (
-    <div className="mb-12">
-      <h2 className="font-medium text-8xl">Socials</h2>
+    <div className="mb-12" id="connect-with-me">
+      <h2 className="font-medium text-4xl">Socials</h2>
 
       {socials.map((social, i) => (
         <div key={i}>

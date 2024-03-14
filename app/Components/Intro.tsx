@@ -1,9 +1,9 @@
 const Intro = () => {
   return (
-    <div className="py-20 pt-40" id="home">
-      <h1 className="text-[10rem] leading-4 font-bold text-gray-900">Hello</h1>
-      <div className="my-24 intro">
-        <h2 className="text-3xl font-light text-gray-900">
+    <div className="py-20 " id="home">
+      <h1 className="text-8xl font-bold text-gray-900">Hello</h1>
+      <div className="intro">
+        <h2 className="text-2xl font-light text-gray-900">
           My name is Manav Malhotra
         </h2>
         <br />

@@ -3,26 +3,25 @@ import experiences from "../data/experiences.json";
 import exp from "constants";
 
 const Experience = () => {
-  useEffect(() => {
-    console.log(experiences);
-  }, []);
+  // useEffect(() => {
+  //   console.log(experiences);
+  // }, []);
+
   return (
     <div className="py-20" id="experience">
-      <h2 className="font-medium text-8xl">Experience</h2>
+      <h2 className="font-medium text-4xl ">Experience</h2>
 
       {experiences.map((exp, i) => (
         <>
-          <section className="py-6" key={i}>
+          <section key={i} className="pb-8">
             <label>{`${exp.startDate} - ${exp.endDate}`}</label>
-            <h3 className="text-xl font-medium">
+            <h3 className="text-lg font-medium">
               {`${exp.name} - @${exp.company}`}
             </h3>
-            <li className="list-disc pl-6">{exp.point1}</li>
-            <li className="list-disc pl-6">{exp.point2}</li>
-            <li className="list-disc pl-6">{exp.point3}</li>
-            {exp.point4 ? (
-              <li className="list-disc pl-6">{exp.point4}</li>
-            ) : null}
+            <li className="list-disc ">{exp.point1}</li>
+            <li className="list-disc ">{exp.point2}</li>
+            <li className="list-disc ">{exp.point3}</li>
+            {exp.point4 ? <li className="list-disc ">{exp.point4}</li> : null}
             <div>
               {exp.technologies.map((tech, i) => (
                 <span

@@ -11,7 +11,7 @@ const Cursor = () => {
       const { clientX, clientY } = e;
       if (e.target && (e.target as HTMLElement).tagName === "A") {
         gsap.to(csr.current, {
-          scale: 4,
+          scale: 2,
         });
         csr.current?.classList.add("active");
       } else {
