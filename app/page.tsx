@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import Cursor from "./Components/utils/Cursor";
@@ -7,7 +7,7 @@ import { useRef } from "react";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Socials from "./Components/Socials";
-import Intro from "./Components/Intro";
+import Intro from "./Components/Intro"; 
 import Navbar from "./Components/Navbar";
 
 export default function Home() {
@@ -27,7 +27,6 @@ export default function Home() {
         <Experience />
         <Projects />
         <Socials />
-      
       </main>
     </>
   );

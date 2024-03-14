@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
-import Navbar from "./Components/Navbar";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>{children}</body>
+      <GoogleAnalytics gaId="G-WY54BWCLJ0" />
     </html>
   );
 }
